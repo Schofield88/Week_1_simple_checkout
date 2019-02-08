@@ -11,8 +11,9 @@ describe Item do
   it "needs to actually have a price" do
     apple = Item.new
     expect(apple.price).to eq (10)
-
   end
+
+end
 
 describe Checkout do
 
@@ -32,10 +33,10 @@ describe Checkout do
 
   it { is_expected.to respond_to :total }
 
-  it "knows the " do
-
+  it "knows the total of all the Items it's scanned" do
+    till = Checkout.new
+    3.times {till.scan(Item.new)}
+    expect(till.total).to eq(30)
   end
-
-end
 
 end

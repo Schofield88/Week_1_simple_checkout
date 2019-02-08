@@ -11,14 +11,18 @@ end
 
 class Checkout
 
-  attr_reader :item
+  attr_reader :item, :basket
+
+  def initialize
+    @basket = []
+  end
 
   def scan(piece_of_food)
-    @item = piece_of_food
+    @basket << piece_of_food
   end
 
   def total
-
+    (@basket.map { |item| item.price  }).sum
   end
 
 end
