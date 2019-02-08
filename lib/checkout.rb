@@ -1,7 +1,9 @@
 class Item
 
-  def price
+  attr_reader :price
 
+  def initialize(price=10)
+    @price = price
   end
 
 end

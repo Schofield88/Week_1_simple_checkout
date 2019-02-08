@@ -8,6 +8,12 @@ describe Item do
 
   it { is_expected.to respond_to :price }
 
+  it "needs to actually have a price" do
+    apple = Item.new
+    expect(apple.price).to eq (10)
+
+  end
+
 describe Checkout do
 
   it 'is actually a real Checkout' do
