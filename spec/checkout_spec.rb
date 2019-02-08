@@ -16,6 +16,8 @@ describe Checkout do
 
   it { is_expected.to respond_to :scan }
 
+  it { is_expected.to respond_to(:scan).with(1).argument }
+
 end
 
 end

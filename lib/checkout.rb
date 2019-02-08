@@ -9,7 +9,7 @@ end
 
 class Checkout
 
-  def scan 
+  def scan(piece_of_food) 
 
   end
 
