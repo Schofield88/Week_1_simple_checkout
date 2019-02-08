@@ -1,3 +1,7 @@
-class Item 
+class Item
+
+  def price
+
+  end
 
 end
