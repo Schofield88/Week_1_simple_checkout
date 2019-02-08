@@ -18,6 +18,18 @@ describe Checkout do
 
   it { is_expected.to respond_to(:scan).with(1).argument }
 
+  it "will take a scanned item with .scan" do
+    till = Checkout.new
+    apple = Item.new
+    expect(till.scan(apple)).to eq(apple)
+  end
+
+  it { is_expected.to respond_to :total }
+
+  it "knows the " do
+
+  end
+
 end
 
 end

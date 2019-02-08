@@ -9,7 +9,13 @@ end
 
 class Checkout
 
-  def scan(piece_of_food) 
+  attr_reader :item
+
+  def scan(piece_of_food)
+    @item = piece_of_food
+  end
+
+  def total
 
   end
 
