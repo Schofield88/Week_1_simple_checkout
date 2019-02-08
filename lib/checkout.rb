@@ -11,8 +11,8 @@ end
 
 class Checkout
 
-  attr_reader :item, :basket
-
+  attr_reader :basket
+  
   def initialize
     @basket = []
   end
