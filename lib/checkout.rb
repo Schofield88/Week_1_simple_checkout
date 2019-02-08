@@ -5,3 +5,12 @@ class Item
   end
 
 end
+
+
+class Checkout
+
+  def scan 
+
+  end
+
+end
